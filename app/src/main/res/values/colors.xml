@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="ghost_white">#f8f8fa</color>
+    <color name="white_smoke">#E1E1E7</color>
+    <color name="purple">#7761cd</color>
+    <color name="dark_purple">#584696</color>
+    <color name="gray_for_light_theme">#86888b</color>
+    <color name="dark_gray_for_light_theme">#292933</color>
+    <color name="gray_for_dark_theme">#999aa2</color>
+    <color name="dark_gray_for_dark_theme">#302e44</color>
+    <color name="gray_for_settings">#585766</color>
+
 </resources>
