@@ -8,7 +8,26 @@
     android:background="@drawable/earth_portrait"
     tools:context="com.Saushkin.calculator_24122022.MainActivity">
 
+    <TextView
+        android:id="@+id/tv_actions"
+        android:layout_width="@dimen/tv_actions_width_port"
+        android:layout_height="@dimen/tv_actions_height_port"
+        app:layout_constraintBottom_toTopOf="@+id/tv_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/tv_actions"
+        android:background="@color/white"/>
 
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="@dimen/tv_result_width_port"
+        android:layout_height="@dimen/tv_result_height_port"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/num_7"
+        app:layout_constraintEnd_toEndOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/num_7"
+        tools:text="@string/tv_result"
+        android:background="@color/white"/>
     <Button
         android:id="@+id/num_7"
         android:layout_width="@dimen/button_width_port"
