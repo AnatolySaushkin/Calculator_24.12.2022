@@ -2,13 +2,10 @@ package com.Saushkin.calculator_24122022;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -28,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sharedPreferences = getSharedPreferences(KEY_THEME, MODE_PRIVATE);
 
         int[] numbersIds = new int[]{
                 R.id.num_0,
@@ -56,15 +52,6 @@ public class MainActivity extends AppCompatActivity {
         tvActions = findViewById(R.id.tv_actions);
         tvResult = findViewById(R.id.tv_result);
 
-        ImageButton buttonSettings = findViewById(R.id.imageButton_settings);
-        checkNightModeActivated();
-        buttonSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(runSettings);
-            }
-        });
 
         calculator = new Calculator();
 
@@ -97,14 +84,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-    }
-
-    public void checkNightModeActivated() {
-        if (sharedPreferences.getBoolean(KEY_THEME, false)) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        }
     }
 
     @Override
