@@ -11,8 +11,8 @@ public class Calculator implements Parcelable {
     private double secondArg;
     private int actionSelected;
 
-    private StringBuilder inputStr = new StringBuilder();
-    private DecimalFormat decimalFormat = new DecimalFormat("#.###");
+    private final StringBuilder inputStr = new StringBuilder();
+    private final DecimalFormat decimalFormat = new DecimalFormat("#.#####");
     private String result;
     private State state;
 
