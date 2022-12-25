@@ -54,22 +54,4 @@
         <item name="cornerRadius">35dp</item>
     </style>
 
-    <style name="TextViewSettingsStyle">
-        <item name="android:textColor">@color/gray_for_settings</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="RadioButtonStyle">
-        <item name="fontFamily">monospace</item>
-        <item name="android:textColor">@color/gray_for_settings</item>
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="ButtonReturnStyle">
-        <item name="android:backgroundTint">@color/purple</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textSize">26sp</item>
-    </style>
 </resources>
