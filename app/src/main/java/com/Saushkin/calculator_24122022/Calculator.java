@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 import java.text.DecimalFormat;
 
+
 public class Calculator implements Parcelable {
 
     private double firstArg;
@@ -12,7 +13,7 @@ public class Calculator implements Parcelable {
     private int actionSelected;
 
     private final StringBuilder inputStr = new StringBuilder();
-    private final DecimalFormat decimalFormat = new DecimalFormat("#.#####");
+    private final DecimalFormat decimalFormat = new DecimalFormat("#.###");
     private String result;
     private State state;
 
@@ -181,4 +182,5 @@ public class Calculator implements Parcelable {
     public String getResult() {
         return result;
     }
-}
+
+    }
